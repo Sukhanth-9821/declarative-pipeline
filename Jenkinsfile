@@ -19,4 +19,12 @@ pipeline{
            }
         }
     }
+	post{
+		always{
+			echo 'Not sure about Build'
+		}
+		success{
+			echo 'Build is Successful'
+		}
+	}
 }
