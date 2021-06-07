@@ -4,13 +4,19 @@ pipeline{
     agent any
     stages{
         stage("build"){
-            echo "This is a build stage"
+           step{
+               echo 'THis is a build'
+           }
         }
         stage("test"){
-            echo "This is a test stage"
+            step{
+               echo 'THis is a test'
+           }
         }
         stage("deploy"){
-            echo "THis is a deploy Stage"
+            step{
+               echo 'THis is a deploy'
+           }
         }
     }
 }
